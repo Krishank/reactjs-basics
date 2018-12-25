@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/Krishank/reactjs-basics#readme",
   "dependencies": {
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1"
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
