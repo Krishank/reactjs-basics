@@ -1,15 +1,16 @@
 # reactjs-basics
 Basic React Project Follow the training for beginner : https://www.youtube.com/playlist?list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS)
 
-#events this branch will explain How to use react Events
+#State this branch will explain How to use State in order to re render the component
 
-onClick{this.onMakeOlder.bind(this)} //Bind
+Please see this video: https://www.youtube.com/watch?v=Iw2BLUjQo1E&index=10&list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS
 
-onClick{()=>onMakeOlder()} //Using Arrow Fuction
+this.setState({
+  age: this.state.age + 1,
+  year: this.state.year + 1
+});
 
 
-In this Example you can see that in alert and console you can see incremental age and year but not in button this is because of state as state is not defined we can not re render the component
-In simple words prop is something which is passed from Outside of the Component.
 #Webpack
 #Webpack-Dev-Server (For Running localhost)
 #ES6
