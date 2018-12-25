@@ -8,8 +8,6 @@ export class Home extends React.Component{
       age: props.age,
       year: new Date().getFullYear()
     }
-    this.changedText="ChangeHeaderNameOnHomeConstructor";
-    props.onChangeLink(this.changedText);
   }
   onMakeOlder(){
     this.setState({
@@ -20,6 +18,9 @@ export class Home extends React.Component{
   onChangeText(){
     this.props.onChangeLink("About");
   }
+  onHandleChange(event){
+    this.props.onChangeLink(event.target.value);
+  }
   render(){
     return(
       <div>
@@ -28,7 +29,7 @@ export class Home extends React.Component{
           <hr/>
           <button className="btn btn-primary" onClick={()=>this.onMakeOlder()}>My Age is {this.state.age} in {this.state.year}</button>
           <hr/>
-         <button className="btn btn-primary" onClick={()=>this.onChangeText()}>Click To Change Header Text</button>
+         <input type="text" onChange={(event)=> this.onHandleChange(event)} value={this.props.intialLinkName}></input><button className="btn btn-primary" onClick={()=>this.onChangeText()}>Click To Change Header Text</button>
       </div>
     )
   }

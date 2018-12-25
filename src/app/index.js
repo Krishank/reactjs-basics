@@ -12,7 +12,6 @@ class App extends React.Component {
       }
     }
     onHeaderTextChange(newName){
-      console.log("newName", newName);
       this.setState({
         homeLinkText: newName
       })
@@ -31,6 +30,7 @@ class App extends React.Component {
                           name={"Krishank Dwivedi"}
                           age={28}
                           onChangeLink={(newName)=> this.onHeaderTextChange(newName)}
+                          intialLinkName={this.state.homeLinkText}
                              />
                     </div>
                 </div>
