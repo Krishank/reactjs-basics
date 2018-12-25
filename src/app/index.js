@@ -7,11 +7,6 @@ import { Home } from "./components/Home";
 class App extends React.Component {
 
     render() {
-        const user={
-          "name": "Anuj Sachan",
-          "age": "28",
-          "hobbies": ["CS", "Traveling", "Coading", "Singing"]
-        }
         return (
             <div className="container">
                 <div className="row">
@@ -21,11 +16,7 @@ class App extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col-xs-10 col-xs-offset-1">
-                        <Home name={"Krishank Dwivedi"} age={28} userDetails={user}>
-                          <p>I am the children passed to Home Component without prop</p>
-                        </Home>
-
-
+                        <Home name={"Krishank Dwivedi"} age={28}/>
                     </div>
                 </div>
             </div>
