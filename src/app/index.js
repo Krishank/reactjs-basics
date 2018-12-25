@@ -1,37 +1,25 @@
 import React from 'react';
 import { render } from 'react-dom';
 
+import {ThemeContext, themes} from './components/theme-context';
+
 import { Header } from "./components/Header";
 import { Home } from "./components/Home";
 
 class App extends React.Component {
-    constructor(props){
-      super();
-      this.state={
-        homeLinkText: "Home"
-      }
-    }
-    onHeaderTextChange(newName){
-      this.setState({
-        homeLinkText: newName
-      })
-    }
     render() {
         return (
             <div className="container">
                 <div className="row">
                     <div className="col-xs-10 col-xs-offset-1">
-                        <Header linkText={this.state.homeLinkText} link="#" />
+                        <Header linkText="Home" link="#" />
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-xs-10 col-xs-offset-1">
-                        <Home
-                          name={"Krishank Dwivedi"}
-                          age={28}
-                          onChangeLink={(newName)=> this.onHeaderTextChange(newName)}
-                          intialLinkName={this.state.homeLinkText}
-                             />
+                       <ThemeContext.Provider value={themes.dark}>
+                        <Home/>
+                       </ThemeContext.Provider>
                     </div>
                 </div>
             </div>
