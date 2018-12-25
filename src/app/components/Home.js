@@ -23,14 +23,14 @@ export class Home extends React.Component{
   }
   render(){
     return(
-      <div>
+      <React.Fragment>
           <p>In a new Home Component!</p>
           <p>Hello My Name is: {this.props.name} and my age is {this.state.age} in {this.state.year}</p>
           <hr/>
           <button className="btn btn-primary" onClick={()=>this.onMakeOlder()}>My Age is {this.state.age} in {this.state.year}</button>
           <hr/>
          <input type="text" onChange={(event)=> this.onHandleChange(event)} value={this.props.intialLinkName}></input><button className="btn btn-primary" onClick={()=>this.onChangeText()}>Click To Change Header Text</button>
-      </div>
+      </React.Fragment>
     )
   }
 }
