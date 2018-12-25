@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Krishank/reactjs-basics#readme",
   "dependencies": {
+    "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   },
