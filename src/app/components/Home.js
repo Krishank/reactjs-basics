@@ -8,8 +8,6 @@ export class Home extends React.Component{
       age: props.age,
       year: new Date().getFullYear()
     }
-    // this.age = props.age;
-    // this.year = new Date().getFullYear();
   }
   onMakeOlder(){
     this.setState({
