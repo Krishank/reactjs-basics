@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 
 import { Header } from "./components/Header";
 import { Home } from "./components/Home";
+import { ErrorBoundary } from "./components/ErrorBoundary";
 
 class App extends React.Component {
 
@@ -16,7 +17,9 @@ class App extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col-xs-10 col-xs-offset-1">
+                      <ErrorBoundary>
                         <Home/>
+                      </ErrorBoundary>
                     </div>
                 </div>
             </div>
