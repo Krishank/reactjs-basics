@@ -1,6 +1,7 @@
 # reactjs-basics
-Basic React Project Follow the training for beginner : https://www.youtube.com/playlist?list=PL55RiY5tL51oyA8euSROLjMFZbXaV7skS)
+https://reactjs.org/docs/error-boundaries.html
 
+# This Branch (react16/ErrorBoundary) will explain how to use ErrorBoundary in your app
 
 #Webpack
 #Webpack-Dev-Server (For Running localhost)
