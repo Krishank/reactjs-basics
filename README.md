@@ -2,8 +2,7 @@
 
 This is a Basic React Project for beginner which is divided in multiple branches to explain different features of react and react16.
 
-
-#Prerequisites: ES6, Javascript, HTML and CSS
+# Prerequisites: ES6, Javascript, HTML and CSS
 
 # 01: react-basic-setup:
         Basic setup to start using webpack, babel to start our project
@@ -82,7 +81,6 @@ This is a Basic React Project for beginner which is divided in multiple branches
         As in React we pass data via props to components suppose if we have a component in nth level this will be a big pain to pass that data to all component as a prop even if they are not using it no issue now we can use contextAPI comes with React16.
 
 #13: react-memo-component
-
         This is also a new feature of react as all the stateless component or stateless function will render if there parent re render we can Avoid that with pure component but now we also have memo
         component which are much faster than stateless components please read the React16 documentation for more info.
 
