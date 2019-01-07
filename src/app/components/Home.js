@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
+import { Button } from './Button.style.js';
 
 export class Home extends React.Component{
   constructor(props){
@@ -24,6 +25,7 @@ export class Home extends React.Component{
   render(){
     return(
       <div>
+          <Button brandColor="green" >I am a Styled Component</Button>
           <p>In a new Home Component!</p>
           <p>Hello My Name is: {this.props.name} and my age is {this.state.age} in {this.state.year}</p>
           <hr/>
